@@ -1,14 +1,15 @@
 import { StockForm } from '../molecules/StockForm';
 import { StockPriceInfo } from '../molecules/StockPriceInfo';
 import { StockChart } from '../molecules/StockChart';
+import type { Stock } from '../../../domain/models/Stock';
 
 interface Props {
   symbol: string;
   alertPrice: number;
   onSymbolChange: (v: string) => void;
   onAlertPriceChange: (v: number) => void;
-  stock: any;
-  history: any[];
+  stock: Stock | null;
+  history: Stock[];
   changePercent: number;
   hasTrades: boolean;
 }
