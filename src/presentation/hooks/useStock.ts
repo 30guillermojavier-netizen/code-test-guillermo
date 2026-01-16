@@ -19,7 +19,6 @@ export function useStock(symbol: string) {
     if (newStock.symbol !== activeSymbolRef.current) {
       return;
     }
-    console.log('Prueba');
 
     setHasTrades(true);
     setStock(newStock);
