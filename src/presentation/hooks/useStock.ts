@@ -43,10 +43,9 @@ export function useStock(symbol: string) {
     setHistory([]);
     setChangePercent(0);
     setHasTrades(false);
-
     previousPriceRef.current = null;
     basePriceRef.current = null;
-  }, []);
+  }, [symbol]);
 
   useEffect(() => {
     if (!symbol) return;
@@ -55,8 +54,6 @@ export function useStock(symbol: string) {
 
     return () => unsubscribe();
   }, [symbol]);
-
-  
 
   return { stock, history, changePercent, hasTrades };
 }

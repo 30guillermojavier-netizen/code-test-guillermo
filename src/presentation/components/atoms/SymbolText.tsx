@@ -3,5 +3,9 @@ interface Props {
 }
 
 export function SymbolText({ value }: Props) {
-  return <h3 className="text-sm font-semibold text-white">{value}</h3>;
+  return (
+    <h3 className="text-sm font-semibold break-words max-w-[160px] text-white">
+      {value}
+    </h3>
+  );
 }

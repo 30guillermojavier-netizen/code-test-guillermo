@@ -25,7 +25,7 @@ export function DashboardLayout({
   hasTrades,
 }: Props) {
   return (
-    <div className="min-h-screen  p-4 md:p-8">
+    <div className="min-h-screen p-4 md:p-8">
       {/* MAIN CONTAINER */}
       <div className="mx-auto max-w-6xl bg-white rounded-2xl shadow-md p-4 md:p-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

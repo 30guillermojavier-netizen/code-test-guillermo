@@ -24,7 +24,7 @@ export function StockPriceInfo({
   return (
     <div className="w-fit">
       <Card>
-        <div className="flex justify-between items-start gap-8">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:flex-row gap-4">
           {/* LEFT */}
           <div>
             <SymbolText value={symbol} />
